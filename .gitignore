@@ -1,0 +1,7 @@
+  GNU nano 4.8                                                                                       .gitignore                                                                                        Modified  
+*.log
+*.pot
+*.pyc
+__pycache__
+local_settings.py
+/static/

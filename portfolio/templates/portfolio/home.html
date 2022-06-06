@@ -14,7 +14,7 @@
     <h2 class="border-bottom border-warning pb-2 mb-3 font-weight-bold">Some of my projects</h2>
     <div class="d-table container-fluid w-100 text-center">
     {% for project in projects %}
-      <article class="d-inline-table project">
+      <article class="d-inline-table project ms-0 ps-0">
         <h3>{{ project.title }}</h3>
         <p>{{ project.description }}</p>
         <img class = 'projectImg' src ='{{ project.image.url }}'>

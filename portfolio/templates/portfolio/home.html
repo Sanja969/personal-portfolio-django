@@ -10,14 +10,16 @@
         Python, and mathematics. I enjoy traveling and riding a bike in divine nature.</h2>
   </section>
 
-  <section class="projects container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+  <section class="projects container-fluid d-flex flex-column justify-content-center align-items-center">
     <h2 class="border-bottom border-warning pb-2 mb-3 font-weight-bold">Some of my projects</h2>
     <div class="d-table container-fluid w-100 text-center">
     {% for project in projects %}
-      <article class="d-inline-table project ms-0 ps-0">
+      <article class="d-inline-table project text-center">
         <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
-        <img class = 'projectImg' src ='{{ project.image.url }}'>
+        <p>{{ project.description|safe }}</p>
+        <div class="d-flex justify-content-center">
+          <img class = 'projectImg' src ='{{ project.image.url }}' width="300" height="200">
+        </div>
         {% if project.url %}
           <a ole="button" class="btn btn-outline-dark mt-2" href ='{{ project.url }}'>See live demo</a>
         {% endif %}

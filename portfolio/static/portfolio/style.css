@@ -94,9 +94,10 @@ main {
   color: rgb(138, 43, 226);
 }
 
-.project > img {
-  width: 100%;
+.project > div > img {
+  width: 200px;
   border: 1px solid black;
+  height: 150px;
 }
 
 .project > p {
@@ -203,6 +204,12 @@ footer {
 
     max-width: 200px;
     box-sizing: border-box;
+  }
+
+  .project > div > img {
+    width: 300px;
+    border: 1px solid black;
+    height: 200px;
   }
 
   .bio {

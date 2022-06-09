@@ -1,38 +1,26 @@
 {% extends 'portfolio/base.html' %}
 
 {% block content %}
-
   {% load static %}
-  
   <section class="heading container-fluid d-flex flex-column justify-content-center align-items-center">
     <img src="{% static 'portfolio/me.jpg' %}" alt="sanja mandic" class="profileImg">
     <h2 class="bio">Full-Stack Software Developer and Mechanical Engineer with a love for Javascript,
         Python, and mathematics. I enjoy traveling and riding a bike in divine nature.</h2>
   </section>
-
-  <section class="projects container-fluid d-flex flex-column justify-content-center align-items-center">
+  <section class="projects container-fluid justify-content-center align-items-center text-center">
     <h2 class="border-bottom border-warning pb-2 mb-3 font-weight-bold">Some of my projects</h2>
-    <div class="d-table container-fluid w-100 text-center">
+    <div class="d-flex justify-content-center align-items-center container-fluid w-100 text-center flex-wrap my-5">
     {% for project in projects %}
-      <article class="d-inline-table project text-center py-2">
+      <article class=" project text-center py-2">
         <h3 class="px-2">{{ project.title }}</h3>
         <p class="px-2">{{ project.description|safe }}</p>
         <div class="d-flex justify-content-center">
           <img class = 'projectImg' src ='{{ project.image.url }}' width="300" height="200">
         </div>
-        {% if project.url %}
-          <a ole="button" class="btn btn-outline-dark my-3" href ='{{ project.url }}'>See live demo</a>
-        {% endif %}
+          <a role="button" class="btn btn-outline-dark m-3" href ='{{ project.sourceUrl }}'>See source</a>
+          <a role="button" class="btn btn-outline-dark m-3" href ='{{ project.liveUrl }}'>See live demo</a>
       </article>
       {% endfor %}
     </div>    
   </section>
-
-{% endblock %} 
-  
-
-
-
-
-
-
+{% endblock %}

@@ -71,9 +71,7 @@ main {
 }
 
 .project {
-  display: inline-table;
-  margin: 10px 20px 10px 0 !important;
-  height: 300px;
+  margin: 10px 0 10px 0 !important;
   min-width: 300px;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgb(205, 88, 20);
@@ -126,7 +124,7 @@ footer {
   padding-top: 100px;
   width: 100%;
   min-height: 880px;
-  background-image: url('https://cdn.pixabay.com/photo/2015/06/02/12/59/book-794978_960_720.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2020/04/04/03/42/paperwork-5000691_960_720.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -141,13 +139,19 @@ footer {
   box-shadow: 0 0 10px 10px rgb(40, 39, 39);
 }
 
+.blog > a {
+  padding: 5px 10px !important;
+}
+
 .blog > h5 {
-  color: #ffc107;
+  color: white;
   margin: 10px 0;
+  font-weight: 800;
 }
 
 .blog > p {
-  color: #ffc107;
+  color: white;
+  font-weight: 800;
 }
 
 .detail {
@@ -162,6 +166,9 @@ footer {
   overflow-wrap: break-word;
   padding: 20px;
   margin: 20px;
+}
+.blogs-title {
+  color: wheat !important;
 }
 
 @keyframes nudge {
@@ -191,8 +198,11 @@ footer {
       font-size: 5rem;
   }
 
-  .profileImg {
-    width: 50%;
+  .project {
+    margin-right: 20px !important;
+
+    max-width: 200px;
+    box-sizing: border-box;
   }
 
   .bio {
@@ -220,10 +230,7 @@ footer {
   .blog {
     width: 60%;
   }
-
-
 }
-
 
 .blob-effect {
   position: relative;
@@ -233,6 +240,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .blob-effect span:nth-child(1) {
   position: absolute;
   top: 0px;
@@ -244,10 +252,12 @@ footer {
   transition: 0.5s;
   animation: rotate-blob 5s linear infinite;
 }
+
 .blob-effect:hover span:nth-child(1) {
   background: #8011c0;
   border: none;
 }
+
 .blob-effect span:nth-child(2) {
   position: absolute;
   top: 0px;
@@ -259,10 +269,12 @@ footer {
   transition: 0.5s;
   animation: rotate-blob 4s linear infinite;
 }
+
 .blob-effect:hover span:nth-child(2) {
   background: #8011c0;
   border: none;
 }
+
 .blob-effect span:nth-child(3) {
   position: absolute;
   top: 0px;
@@ -274,10 +286,12 @@ footer {
   transition: 0.5s;
   animation: rotate-blob2 10s linear infinite;
 }
+
 .blob-effect:hover span:nth-child(3) {
   background: #8011c0;
   border: none;
 }
+
 @keyframes rotate-blob {
   0% {
     transform: rotate(0deg);
@@ -286,6 +300,7 @@ footer {
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotate-blob2 {
   0% {
     transform: rotate(360deg);
@@ -294,6 +309,7 @@ footer {
     transform: rotate(0deg);
   }
 }
+
 .div-container {
   position: relative;
   padding: 40px 60px;
@@ -302,9 +318,11 @@ footer {
   transition: 0.5s;
   z-index: 10000;
 }
+
 .div-container p {
   color: #fff;
 }
+
 .div-container a {
   position: relative;
   display: inline-block;
@@ -316,6 +334,7 @@ footer {
   font-weight: 600;
   border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
 }
+
 .div-container a:hover {
   background: #fff;
   color: #333;

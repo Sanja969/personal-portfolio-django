@@ -2,15 +2,9 @@
 
 {% block content %}
   <section class="blogs text-center container-fluid">
-<<<<<<< HEAD
-    <img src ='https://2.bp.blogspot.com/-wq-Lut3wicw/V7m4g_XvLQI/AAAAAAAAAXw/Q6QUsrO5ICgMYFjtFCLgcYppyEIvsXGLQCLcB/s1600/logo%2Bblog.gif' width="200">
-
-    <h2 class=" blogs-title text-info">Sanja has written {{ blogs.count }} blog{{ blogs.count|pluralize }}. Click on one of the below to open:</h2>
-=======
     <h2 class="blogs-title" width="200"><h2><B>Blogs</B></h2>
-  
+
     <h2 class="blogs-title">Sanja has written {{ blogs.count }} blog{{ blogs.count|pluralize }}. Click on one of belowe to open:</h2>
->>>>>>> 9d20597533a876de57906430034c77f9232bd9fe
     <div class="d-flex justify-center flex-column align-items-center container-fluid mb-5">
       {% for blog in blogs %}
       <article class ='blog'>

@@ -5,7 +5,6 @@ I got some pictures of myself, and a big line about me in the headline.
 I made a portfolio section where I made an app for posting all my portfolios. 
 I post some of them, but in the future, I'm planning to post more of them, as I will improve some of my posted projects.
 Also, I made a blog app, for posting blogs. When you click on the blog link in the header you will go to my blogs.
-
 > For design, I was using Bootstrap framework as of course CSS.
 I was using Django and python for backend.
 Beyond this, there are a lot of cool things about this website that are driven by databases. It is storing all information for my blogs and projects.
